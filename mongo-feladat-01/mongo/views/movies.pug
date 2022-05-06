@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .container
+     h1 Movies
+     table.table.table-striped 
+        thead
+            tr 
+                th #
+                th Title 
+                th Category
+                th Directory 
+        tbody
+          - var nth = 0
+          each movie in movies
+            - nth++
+            tr 
+              td=nth 
+              td=movie.title 
+              td=movie.category 
+              td=movie.director 
+  
