@@ -10,6 +10,8 @@ block content
                 th Title 
                 th Category
                 th Directory 
+                th Rating
+                th ReleaseYear 
         tbody
           - var nth = 0
           each movie in movies
@@ -18,5 +20,7 @@ block content
               td=nth 
               td=movie.title 
               td=movie.category 
-              td=movie.director 
+              td=movie.director
+              td=movie.rating 
+              td=movie.releaseYear
   
